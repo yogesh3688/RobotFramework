@@ -1,0 +1,1 @@
+robot -d Result - N "My Sample Report" -L debug Test

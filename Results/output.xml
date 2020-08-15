@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.5 on win32)" generated="20200815 20:34:55.749" rpa="false">
+<suite id="s1" name="My Sample" source="F:\Workspace\Robot-Test\Tests">
+<suite id="s1-s1" name="ICICI HomePage" source="F:\Workspace\Robot-Test\Tests\ICICI_HomePage.robot">
+<kw name="MY SUITE SETUP" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>My suite setup</arg>
+</arguments>
+<msg timestamp="20200815 20:34:55.898" level="INFO">My suite setup</msg>
+<status status="PASS" starttime="20200815 20:34:55.898" endtime="20200815 20:34:55.898"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:34:55.898" endtime="20200815 20:34:55.898"></status>
+</kw>
+<test id="s1-s1-t1" name="TC_01_ICICI_HOME_PAGE">
+<kw name="MY TEST SETUP" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${TEST_NAME}</arg>
+</arguments>
+<msg timestamp="20200815 20:34:55.899" level="INFO">TC_01_ICICI_HOME_PAGE</msg>
+<status status="PASS" starttime="20200815 20:34:55.899" endtime="20200815 20:34:55.899"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:34:55.899" endtime="20200815 20:34:55.899"></status>
+</kw>
+<kw name="OPEN BROWSER AND NAVIGATE">
+<arguments>
+<arg>https://www.icicibank.com</arg>
+<arg>chrome</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200815 20:34:55.900" level="INFO">Opening browser 'chrome' to base url 'https://www.icicibank.com'.</msg>
+<msg timestamp="20200815 20:34:56.485" level="DEBUG">POST http://127.0.0.1:62763/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}</msg>
+<msg timestamp="20200815 20:34:56.485" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:62763</msg>
+<msg timestamp="20200815 20:34:59.194" level="DEBUG">http://127.0.0.1:62763 "POST /session HTTP/1.1" 200 715</msg>
+<msg timestamp="20200815 20:34:59.195" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:34:59.196" level="DEBUG">POST http://127.0.0.1:62763/session/62ae88e8cde68d270af1dd9a93455dbb/timeouts {"script": 5000}</msg>
+<msg timestamp="20200815 20:34:59.199" level="DEBUG">http://127.0.0.1:62763 "POST /session/62ae88e8cde68d270af1dd9a93455dbb/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:34:59.200" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:34:59.200" level="DEBUG">POST http://127.0.0.1:62763/session/62ae88e8cde68d270af1dd9a93455dbb/timeouts {"implicit": 0}</msg>
+<msg timestamp="20200815 20:34:59.203" level="DEBUG">http://127.0.0.1:62763 "POST /session/62ae88e8cde68d270af1dd9a93455dbb/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:34:59.204" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:34:59.204" level="DEBUG">POST http://127.0.0.1:62763/session/62ae88e8cde68d270af1dd9a93455dbb/url {"url": "https://www.icicibank.com"}</msg>
+<msg timestamp="20200815 20:35:01.392" level="DEBUG">http://127.0.0.1:62763 "POST /session/62ae88e8cde68d270af1dd9a93455dbb/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:01.392" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:01.392" level="DEBUG">Opened browser with session id 62ae88e8cde68d270af1dd9a93455dbb.</msg>
+<status status="PASS" starttime="20200815 20:34:55.900" endtime="20200815 20:35:01.392"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20200815 20:35:01.392" level="DEBUG">POST http://127.0.0.1:62763/session/62ae88e8cde68d270af1dd9a93455dbb/window/maximize {}</msg>
+<msg timestamp="20200815 20:35:03.764" level="DEBUG">http://127.0.0.1:62763 "POST /session/62ae88e8cde68d270af1dd9a93455dbb/window/maximize HTTP/1.1" 200 51</msg>
+<msg timestamp="20200815 20:35:03.764" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200815 20:35:01.392" endtime="20200815 20:35:03.764"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>get title</arg>
+</arguments>
+<msg timestamp="20200815 20:35:03.765" level="INFO">get title</msg>
+<status status="PASS" starttime="20200815 20:35:03.764" endtime="20200815 20:35:03.765"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:34:55.900" endtime="20200815 20:35:03.765"></status>
+</kw>
+<kw name="CLOSE BROWSERS" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<msg timestamp="20200815 20:35:03.766" level="DEBUG">Closing all browsers.</msg>
+<msg timestamp="20200815 20:35:03.766" level="DEBUG">DELETE http://127.0.0.1:62763/session/62ae88e8cde68d270af1dd9a93455dbb {}</msg>
+<msg timestamp="20200815 20:35:03.801" level="DEBUG">http://127.0.0.1:62763 "DELETE /session/62ae88e8cde68d270af1dd9a93455dbb HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:03.802" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200815 20:35:03.766" endtime="20200815 20:35:05.942"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:03.765" endtime="20200815 20:35:05.942"></status>
+</kw>
+<doc>This is ICICI home page</doc>
+<tags>
+<tag>Sanity</tag>
+</tags>
+<status status="PASS" starttime="20200815 20:34:55.898" endtime="20200815 20:35:05.942" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="TC_02_HDFC_HOME_PAGE">
+<kw name="MY TEST SETUP" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${TEST_NAME}</arg>
+</arguments>
+<msg timestamp="20200815 20:35:05.942" level="INFO">TC_02_HDFC_HOME_PAGE</msg>
+<status status="PASS" starttime="20200815 20:35:05.942" endtime="20200815 20:35:05.942"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:05.942" endtime="20200815 20:35:05.942"></status>
+</kw>
+<kw name="OPEN BROWSER AND NAVIGATE">
+<arguments>
+<arg>https://www.hdfcbank.com</arg>
+<arg>chrome</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200815 20:35:05.958" level="INFO">Opening browser 'chrome' to base url 'https://www.hdfcbank.com'.</msg>
+<msg timestamp="20200815 20:35:06.549" level="DEBUG">POST http://127.0.0.1:62816/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}</msg>
+<msg timestamp="20200815 20:35:06.549" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:62816</msg>
+<msg timestamp="20200815 20:35:09.255" level="DEBUG">http://127.0.0.1:62816 "POST /session HTTP/1.1" 200 715</msg>
+<msg timestamp="20200815 20:35:09.255" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:09.255" level="DEBUG">POST http://127.0.0.1:62816/session/20f50e3f5deafcc59bedf5bd086e76d4/timeouts {"script": 5000}</msg>
+<msg timestamp="20200815 20:35:09.256" level="DEBUG">http://127.0.0.1:62816 "POST /session/20f50e3f5deafcc59bedf5bd086e76d4/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:09.256" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:09.256" level="DEBUG">POST http://127.0.0.1:62816/session/20f50e3f5deafcc59bedf5bd086e76d4/timeouts {"implicit": 0}</msg>
+<msg timestamp="20200815 20:35:09.257" level="DEBUG">http://127.0.0.1:62816 "POST /session/20f50e3f5deafcc59bedf5bd086e76d4/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:09.257" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:09.257" level="DEBUG">POST http://127.0.0.1:62816/session/20f50e3f5deafcc59bedf5bd086e76d4/url {"url": "https://www.hdfcbank.com"}</msg>
+<msg timestamp="20200815 20:35:10.298" level="DEBUG">http://127.0.0.1:62816 "POST /session/20f50e3f5deafcc59bedf5bd086e76d4/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:10.298" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:10.298" level="DEBUG">Opened browser with session id 20f50e3f5deafcc59bedf5bd086e76d4.</msg>
+<status status="PASS" starttime="20200815 20:35:05.942" endtime="20200815 20:35:10.298"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20200815 20:35:10.299" level="DEBUG">POST http://127.0.0.1:62816/session/20f50e3f5deafcc59bedf5bd086e76d4/window/maximize {}</msg>
+<msg timestamp="20200815 20:35:12.565" level="DEBUG">http://127.0.0.1:62816 "POST /session/20f50e3f5deafcc59bedf5bd086e76d4/window/maximize HTTP/1.1" 200 51</msg>
+<msg timestamp="20200815 20:35:12.565" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200815 20:35:10.299" endtime="20200815 20:35:12.565"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>get title</arg>
+</arguments>
+<msg timestamp="20200815 20:35:12.567" level="INFO">get title</msg>
+<status status="PASS" starttime="20200815 20:35:12.567" endtime="20200815 20:35:12.567"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:05.942" endtime="20200815 20:35:12.569"></status>
+</kw>
+<kw name="CLOSE BROWSERS" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<msg timestamp="20200815 20:35:12.571" level="DEBUG">Closing all browsers.</msg>
+<msg timestamp="20200815 20:35:12.572" level="DEBUG">DELETE http://127.0.0.1:62816/session/20f50e3f5deafcc59bedf5bd086e76d4 {}</msg>
+<msg timestamp="20200815 20:35:12.610" level="DEBUG">http://127.0.0.1:62816 "DELETE /session/20f50e3f5deafcc59bedf5bd086e76d4 HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:12.611" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200815 20:35:12.571" endtime="20200815 20:35:14.725"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:12.570" endtime="20200815 20:35:14.725"></status>
+</kw>
+<doc>This is HDFC Bank home page</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20200815 20:35:05.942" endtime="20200815 20:35:14.725" critical="yes"></status>
+</test>
+<kw name="MY SUITE TEARDOWN" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>My Suite Teardown</arg>
+</arguments>
+<msg timestamp="20200815 20:35:14.725" level="INFO">My Suite Teardown</msg>
+<status status="PASS" starttime="20200815 20:35:14.725" endtime="20200815 20:35:14.725"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:14.725" endtime="20200815 20:35:14.725"></status>
+</kw>
+<doc>This is first testcase</doc>
+<status status="PASS" starttime="20200815 20:34:55.771" endtime="20200815 20:35:14.725"></status>
+</suite>
+<suite id="s1-s2" name="Test" source="F:\Workspace\Robot-Test\Tests\Test.robot">
+<kw name="MY SUITE SETUP" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>My suite setup</arg>
+</arguments>
+<msg timestamp="20200815 20:35:14.756" level="INFO">My suite setup</msg>
+<status status="PASS" starttime="20200815 20:35:14.756" endtime="20200815 20:35:14.756"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:14.756" endtime="20200815 20:35:14.756"></status>
+</kw>
+<test id="s1-s2-t1" name="TC_01_ICICI_HOME_PAGE">
+<kw name="MY TEST SETUP" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${TEST_NAME}</arg>
+</arguments>
+<msg timestamp="20200815 20:35:14.756" level="INFO">TC_01_ICICI_HOME_PAGE</msg>
+<status status="PASS" starttime="20200815 20:35:14.756" endtime="20200815 20:35:14.756"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:14.756" endtime="20200815 20:35:14.756"></status>
+</kw>
+<kw name="OPEN BROWSER AND NAVIGATE">
+<arguments>
+<arg>https://www.icicibank.com</arg>
+<arg>chrome</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200815 20:35:14.756" level="INFO">Opening browser 'chrome' to base url 'https://www.icicibank.com'.</msg>
+<msg timestamp="20200815 20:35:15.339" level="DEBUG">POST http://127.0.0.1:62879/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}</msg>
+<msg timestamp="20200815 20:35:15.339" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:62879</msg>
+<msg timestamp="20200815 20:35:17.979" level="DEBUG">http://127.0.0.1:62879 "POST /session HTTP/1.1" 200 717</msg>
+<msg timestamp="20200815 20:35:17.979" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:17.979" level="DEBUG">POST http://127.0.0.1:62879/session/a80cc5b3097775a0f79f48d7673751b9/timeouts {"script": 5000}</msg>
+<msg timestamp="20200815 20:35:17.979" level="DEBUG">http://127.0.0.1:62879 "POST /session/a80cc5b3097775a0f79f48d7673751b9/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:17.979" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:17.979" level="DEBUG">POST http://127.0.0.1:62879/session/a80cc5b3097775a0f79f48d7673751b9/timeouts {"implicit": 0}</msg>
+<msg timestamp="20200815 20:35:17.979" level="DEBUG">http://127.0.0.1:62879 "POST /session/a80cc5b3097775a0f79f48d7673751b9/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:17.979" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:17.979" level="DEBUG">POST http://127.0.0.1:62879/session/a80cc5b3097775a0f79f48d7673751b9/url {"url": "https://www.icicibank.com"}</msg>
+<msg timestamp="20200815 20:35:20.161" level="DEBUG">http://127.0.0.1:62879 "POST /session/a80cc5b3097775a0f79f48d7673751b9/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:20.162" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:20.162" level="DEBUG">Opened browser with session id a80cc5b3097775a0f79f48d7673751b9.</msg>
+<status status="PASS" starttime="20200815 20:35:14.756" endtime="20200815 20:35:20.162"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20200815 20:35:20.162" level="DEBUG">POST http://127.0.0.1:62879/session/a80cc5b3097775a0f79f48d7673751b9/window/maximize {}</msg>
+<msg timestamp="20200815 20:35:22.353" level="DEBUG">http://127.0.0.1:62879 "POST /session/a80cc5b3097775a0f79f48d7673751b9/window/maximize HTTP/1.1" 200 51</msg>
+<msg timestamp="20200815 20:35:22.354" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200815 20:35:20.162" endtime="20200815 20:35:22.354"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>get title</arg>
+</arguments>
+<msg timestamp="20200815 20:35:22.355" level="INFO">get title</msg>
+<status status="PASS" starttime="20200815 20:35:22.354" endtime="20200815 20:35:22.355"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:14.756" endtime="20200815 20:35:22.355"></status>
+</kw>
+<kw name="CLOSE BROWSERS" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<msg timestamp="20200815 20:35:22.359" level="DEBUG">Closing all browsers.</msg>
+<msg timestamp="20200815 20:35:22.359" level="DEBUG">DELETE http://127.0.0.1:62879/session/a80cc5b3097775a0f79f48d7673751b9 {}</msg>
+<msg timestamp="20200815 20:35:22.404" level="DEBUG">http://127.0.0.1:62879 "DELETE /session/a80cc5b3097775a0f79f48d7673751b9 HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:22.405" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200815 20:35:22.357" endtime="20200815 20:35:24.537"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:22.356" endtime="20200815 20:35:24.537"></status>
+</kw>
+<doc>This is ICICI home page</doc>
+<tags>
+<tag>Sanity</tag>
+</tags>
+<status status="PASS" starttime="20200815 20:35:14.756" endtime="20200815 20:35:24.537" critical="yes"></status>
+</test>
+<test id="s1-s2-t2" name="TC_02_HDFC_HOME_PAGE">
+<kw name="MY TEST SETUP" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${TEST_NAME}</arg>
+</arguments>
+<msg timestamp="20200815 20:35:24.537" level="INFO">TC_02_HDFC_HOME_PAGE</msg>
+<status status="PASS" starttime="20200815 20:35:24.537" endtime="20200815 20:35:24.537"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:24.537" endtime="20200815 20:35:24.537"></status>
+</kw>
+<kw name="OPEN BROWSER AND NAVIGATE">
+<arguments>
+<arg>https://www.hdfcbank.com</arg>
+<arg>chrome</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200815 20:35:24.552" level="INFO">Opening browser 'chrome' to base url 'https://www.hdfcbank.com'.</msg>
+<msg timestamp="20200815 20:35:25.145" level="DEBUG">POST http://127.0.0.1:62937/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}</msg>
+<msg timestamp="20200815 20:35:25.146" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:62937</msg>
+<msg timestamp="20200815 20:35:27.822" level="DEBUG">http://127.0.0.1:62937 "POST /session HTTP/1.1" 200 716</msg>
+<msg timestamp="20200815 20:35:27.822" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:27.822" level="DEBUG">POST http://127.0.0.1:62937/session/b68c45e403bb6137d091be7b82b33d41/timeouts {"script": 5000}</msg>
+<msg timestamp="20200815 20:35:27.822" level="DEBUG">http://127.0.0.1:62937 "POST /session/b68c45e403bb6137d091be7b82b33d41/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:27.838" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:27.838" level="DEBUG">POST http://127.0.0.1:62937/session/b68c45e403bb6137d091be7b82b33d41/timeouts {"implicit": 0}</msg>
+<msg timestamp="20200815 20:35:27.838" level="DEBUG">http://127.0.0.1:62937 "POST /session/b68c45e403bb6137d091be7b82b33d41/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:27.838" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:27.838" level="DEBUG">POST http://127.0.0.1:62937/session/b68c45e403bb6137d091be7b82b33d41/url {"url": "https://www.hdfcbank.com"}</msg>
+<msg timestamp="20200815 20:35:29.051" level="DEBUG">http://127.0.0.1:62937 "POST /session/b68c45e403bb6137d091be7b82b33d41/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:29.052" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200815 20:35:29.052" level="DEBUG">Opened browser with session id b68c45e403bb6137d091be7b82b33d41.</msg>
+<status status="PASS" starttime="20200815 20:35:24.552" endtime="20200815 20:35:29.052"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20200815 20:35:29.052" level="DEBUG">POST http://127.0.0.1:62937/session/b68c45e403bb6137d091be7b82b33d41/window/maximize {}</msg>
+<msg timestamp="20200815 20:35:31.346" level="DEBUG">http://127.0.0.1:62937 "POST /session/b68c45e403bb6137d091be7b82b33d41/window/maximize HTTP/1.1" 200 51</msg>
+<msg timestamp="20200815 20:35:31.347" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200815 20:35:29.052" endtime="20200815 20:35:31.347"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>get title</arg>
+</arguments>
+<msg timestamp="20200815 20:35:31.347" level="INFO">get title</msg>
+<status status="PASS" starttime="20200815 20:35:31.347" endtime="20200815 20:35:31.347"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:24.537" endtime="20200815 20:35:31.347"></status>
+</kw>
+<kw name="CLOSE BROWSERS" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<msg timestamp="20200815 20:35:31.348" level="DEBUG">Closing all browsers.</msg>
+<msg timestamp="20200815 20:35:31.348" level="DEBUG">DELETE http://127.0.0.1:62937/session/b68c45e403bb6137d091be7b82b33d41 {}</msg>
+<msg timestamp="20200815 20:35:31.381" level="DEBUG">http://127.0.0.1:62937 "DELETE /session/b68c45e403bb6137d091be7b82b33d41 HTTP/1.1" 200 14</msg>
+<msg timestamp="20200815 20:35:31.382" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200815 20:35:31.347" endtime="20200815 20:35:33.517"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:31.347" endtime="20200815 20:35:33.517"></status>
+</kw>
+<doc>This is HDFC Bank home page</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20200815 20:35:24.537" endtime="20200815 20:35:33.517" critical="yes"></status>
+</test>
+<kw name="MY SUITE TEARDOWN" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>My Suite Teardown</arg>
+</arguments>
+<msg timestamp="20200815 20:35:33.517" level="INFO">My Suite Teardown</msg>
+<status status="PASS" starttime="20200815 20:35:33.517" endtime="20200815 20:35:33.517"></status>
+</kw>
+<status status="PASS" starttime="20200815 20:35:33.517" endtime="20200815 20:35:33.517"></status>
+</kw>
+<doc>This is first testcase</doc>
+<status status="PASS" starttime="20200815 20:35:14.740" endtime="20200815 20:35:33.517"></status>
+</suite>
+<status status="PASS" starttime="20200815 20:34:55.750" endtime="20200815 20:35:33.517"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">Sanity</stat>
+<stat pass="2" fail="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="My Sample">My Sample</stat>
+<stat pass="2" fail="0" id="s1-s1" name="ICICI HomePage">My Sample.ICICI HomePage</stat>
+<stat pass="2" fail="0" id="s1-s2" name="Test">My Sample.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
