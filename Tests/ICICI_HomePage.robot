@@ -8,11 +8,13 @@ Test Teardown    CLOSE BROWSERS
 
 
 *** Test Cases ***
-TC_01_ICICI_HOME_PAGE
+TC_01_SET_LOG_LEVEL_DEBUG
     [Documentation]    This is ICICI home page
     [Tags]    Sanity
+    Comment    set debug log level
+    set log level    Debug
     OPEN BROWSER AND NAVIGATE    https://www.icicibank.com    chrome
-
+    set log level    info
 
 TC_02_HDFC_HOME_PAGE
     [Documentation]    This is HDFC Bank home page
@@ -31,6 +33,8 @@ OPEN BROWSER AND NAVIGATE
 
 CLOSE BROWSERS
     close all browsers
+    log    ${TEST STATUS}
+    log    ${TEST MESSAGE}
 
 MY TEST SETUP
     log    ${TEST_NAME}

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d81576-ea52-4d50-9ea7-cda46e2eb639" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/commads.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/commads.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Results/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Results/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Results/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Results/report.html" afterDir="false" />
@@ -35,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RobotOptionsProvider">
     <option name="loadProjectDefaultVariable" value="true" />
@@ -87,33 +87,41 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="492" y="227" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1596723591223" />
+    <state x="548" y="126" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1597941959137">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="548" y="126" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.834@0.0.1536.834" timestamp="1597941959137" />
+    <state x="539" y="266" width="456" height="441" key="#com.intellij.tools.ToolEditorDialog" timestamp="1597942095100">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="539" y="266" width="456" height="441" key="#com.intellij.tools.ToolEditorDialog/0.0.1536.834@0.0.1536.834" timestamp="1597942095100" />
     <state x="548" y="162" key="FileChooserDialogImpl" timestamp="1596724057022">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="548" y="162" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1596724057022" />
-    <state width="1515" height="214" key="GridCell.Tab.0.bottom" timestamp="1597515507688">
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1597942464137">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597515507688" />
-    <state width="1515" height="214" key="GridCell.Tab.0.center" timestamp="1597515507687">
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597942464137" />
+    <state width="1515" height="213" key="GridCell.Tab.0.center" timestamp="1597942464137">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1597515507687" />
-    <state width="1515" height="214" key="GridCell.Tab.0.left" timestamp="1597515507686">
+    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1597942464137" />
+    <state width="1515" height="213" key="GridCell.Tab.0.left" timestamp="1597942464137">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1597515507686" />
-    <state width="1515" height="214" key="GridCell.Tab.0.right" timestamp="1597515507688">
+    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1597942464137" />
+    <state width="1515" height="213" key="GridCell.Tab.0.right" timestamp="1597942464137">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1597515507688" />
-    <state x="279" y="63" key="SettingsEditor" timestamp="1596724260335">
+    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1597942464137" />
+    <state x="279" y="63" key="SettingsEditor" timestamp="1597942096784">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="279" y="63" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1596724260335" />
-    <state x="477" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1597497688244">
+    <state x="279" y="63" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1597942096784" />
+    <state x="477" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1597941536799">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="477" y="245" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1597497688244" />
+    <state x="477" y="245" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1597941536799" />
   </component>
 </project>

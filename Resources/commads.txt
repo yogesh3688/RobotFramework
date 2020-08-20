@@ -1,1 +1,1 @@
-robot -d Result - N "My Sample Report" -L debug Test
+robot -d Result - N "My Sample Report" -L debug --processes 2 Tests/Test.robot
