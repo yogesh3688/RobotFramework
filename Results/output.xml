@@ -1,379 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.5 on win32)" generated="20200820 22:24:24.349" rpa="false">
-<suite id="s1" name="Test" source="F:\Workspace\Robot-Test\Tests\Test.robot">
-<kw name="MY SUITE SETUP" type="setup">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>My suite setup</arg>
-</arguments>
-<msg timestamp="20200820 22:24:24.491" level="INFO">My suite setup</msg>
-<status status="PASS" starttime="20200820 22:24:24.491" endtime="20200820 22:24:24.491"></status>
-</kw>
-<status status="PASS" starttime="20200820 22:24:24.491" endtime="20200820 22:24:24.491"></status>
-</kw>
-<test id="s1-t1" name="TC_01_ICICI_HOME_PAGE">
-<kw name="MY TEST SETUP" type="setup">
+<robot generator="Robot 3.1.2 (Python 3.7.5 on win32)" generated="20200823 20:19:35.800" rpa="false">
+<suite id="s1" name="DictionaryTest" source="F:\Workspace\Robot-Test\Tests\DictionaryTest.robot">
+<test id="s1-t1" name="01_TEST_FIRST">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${TEST_NAME}</arg>
 </arguments>
-<msg timestamp="20200820 22:24:24.491" level="INFO">TC_01_ICICI_HOME_PAGE</msg>
-<status status="PASS" starttime="20200820 22:24:24.491" endtime="20200820 22:24:24.491"></status>
-</kw>
-<status status="PASS" starttime="20200820 22:24:24.491" endtime="20200820 22:24:24.491"></status>
-</kw>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>set log level</arg>
-<arg>Debug</arg>
-</arguments>
-<status status="PASS" starttime="20200820 22:24:24.491" endtime="20200820 22:24:24.491"></status>
-</kw>
-<kw name="OPEN BROWSER AND NAVIGATE">
-<arguments>
-<arg>https://www.icicibank.com</arg>
-<arg>chrome</arg>
-</arguments>
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-</arguments>
-<msg timestamp="20200820 22:24:24.491" level="INFO">Opening browser 'chrome' to base url 'https://www.icicibank.com'.</msg>
-<status status="PASS" starttime="20200820 22:24:24.491" endtime="20200820 22:24:44.974"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200820 22:24:44.974" endtime="20200820 22:24:47.160"></status>
+<msg timestamp="20200823 20:19:35.816" level="INFO">01_TEST_FIRST</msg>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>get title</arg>
+<arg>${URL.${ENV}}</arg>
 </arguments>
-<msg timestamp="20200820 22:24:47.160" level="INFO">get title</msg>
-<status status="PASS" starttime="20200820 22:24:47.160" endtime="20200820 22:24:47.160"></status>
+<msg timestamp="20200823 20:19:35.816" level="INFO">I am QA</msg>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
 </kw>
-<kw name="Get WebElements" library="SeleniumLibrary">
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<arguments>
-<arg>xpath=//a</arg>
-</arguments>
-<assign>
-<var>@{links}</var>
-</assign>
-<msg timestamp="20200820 22:24:47.238" level="INFO">@{links} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="2485cd8a858e4271699391dbde1beefa", element="7277ae4b-52d5-42bb-986e-a7d08beb38d4")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
-<status status="PASS" starttime="20200820 22:24:47.161" endtime="20200820 22:24:47.238"></status>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<arguments>
-<arg>1</arg>
-</arguments>
-<assign>
-<var>${index}</var>
-</assign>
-<msg timestamp="20200820 22:24:47.239" level="INFO">${index} = 1</msg>
-<status status="PASS" starttime="20200820 22:24:47.238" endtime="20200820 22:24:47.239"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>@{links}[${index}]</arg>
-</arguments>
-<msg timestamp="20200820 22:24:47.239" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="2485cd8a858e4271699391dbde1beefa", element="eb9bf613-029b-46a8-84ff-9dca6572d1f2")&gt;'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200820 22:24:47.811" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200820 22:24:47.263" endtime="20200820 22:24:47.811"></status>
-</kw>
-<msg timestamp="20200820 22:24:47.813" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=83.0.4103.61)
-</msg>
-<status status="FAIL" starttime="20200820 22:24:47.239" endtime="20200820 22:24:47.813"></status>
-</kw>
-<status status="FAIL" starttime="20200820 22:24:24.491" endtime="20200820 22:24:47.813"></status>
-</kw>
-<kw name="CLOSE BROWSERS" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200820 22:24:47.813" endtime="20200820 22:24:49.973"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${TEST STATUS}</arg>
-</arguments>
-<msg timestamp="20200820 22:24:49.973" level="INFO">FAIL</msg>
-<status status="PASS" starttime="20200820 22:24:49.973" endtime="20200820 22:24:49.973"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${TEST MESSAGE}</arg>
-</arguments>
-<msg timestamp="20200820 22:24:49.973" level="INFO">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=83.0.4103.61)
-</msg>
-<status status="PASS" starttime="20200820 22:24:49.973" endtime="20200820 22:24:49.973"></status>
-</kw>
-<status status="PASS" starttime="20200820 22:24:47.813" endtime="20200820 22:24:49.973"></status>
-</kw>
-<doc>This is ICICI home page</doc>
-<tags>
-<tag>Sanity</tag>
-</tags>
-<status status="FAIL" starttime="20200820 22:24:24.491" endtime="20200820 22:24:49.973" critical="yes">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=83.0.4103.61)
-</status>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816" critical="yes"></status>
 </test>
-<test id="s1-t2" name="TC_02_HDFC_HOME_PAGE">
-<kw name="MY TEST SETUP" type="setup">
+<test id="s1-t2" name="02_TEST_MULTIPLE_VALUES">
+<kw name="MULTIPLE VALUES">
+<arguments>
+<arg>one</arg>
+<arg>two</arg>
+<arg>three</arg>
+</arguments>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${TEST_NAME}</arg>
+<arg>first</arg>
 </arguments>
-<msg timestamp="20200820 22:24:49.973" level="INFO">TC_02_HDFC_HOME_PAGE</msg>
-<status status="PASS" starttime="20200820 22:24:49.973" endtime="20200820 22:24:49.973"></status>
-</kw>
-<status status="PASS" starttime="20200820 22:24:49.973" endtime="20200820 22:24:49.973"></status>
-</kw>
-<kw name="OPEN BROWSER AND NAVIGATE">
-<arguments>
-<arg>https://www.hdfcbank.com</arg>
-<arg>chrome</arg>
-</arguments>
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-</arguments>
-<msg timestamp="20200820 22:24:49.973" level="INFO">Opening browser 'chrome' to base url 'https://www.hdfcbank.com'.</msg>
-<status status="PASS" starttime="20200820 22:24:49.973" endtime="20200820 22:24:54.750"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200820 22:24:54.750" endtime="20200820 22:24:58.889"></status>
+<msg timestamp="20200823 20:19:35.816" level="INFO">first</msg>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>get title</arg>
+<arg>second</arg>
 </arguments>
-<msg timestamp="20200820 22:24:58.890" level="INFO">get title</msg>
-<status status="PASS" starttime="20200820 22:24:58.889" endtime="20200820 22:24:58.890"></status>
-</kw>
-<kw name="Get WebElements" library="SeleniumLibrary">
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<arguments>
-<arg>xpath=//a</arg>
-</arguments>
-<assign>
-<var>@{links}</var>
-</assign>
-<msg timestamp="20200820 22:24:58.964" level="INFO">@{links} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="9860d1875217dbf87faa54b705fbd314", element="033ac4c3-3124-4503-8860-e11cc4a818b6")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
-<status status="PASS" starttime="20200820 22:24:58.890" endtime="20200820 22:24:58.965"></status>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<arguments>
-<arg>1</arg>
-</arguments>
-<assign>
-<var>${index}</var>
-</assign>
-<msg timestamp="20200820 22:24:58.966" level="INFO">${index} = 1</msg>
-<status status="PASS" starttime="20200820 22:24:58.966" endtime="20200820 22:24:58.966"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>@{links}[${index}]</arg>
-</arguments>
-<msg timestamp="20200820 22:24:58.968" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="9860d1875217dbf87faa54b705fbd314", element="7674b600-a819-4d58-9433-038fd035485e")&gt;'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200820 22:24:59.426" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200820 22:24:58.990" endtime="20200820 22:24:59.426"></status>
-</kw>
-<msg timestamp="20200820 22:24:59.426" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=83.0.4103.61)
-</msg>
-<status status="FAIL" starttime="20200820 22:24:58.967" endtime="20200820 22:24:59.426"></status>
-</kw>
-<status status="FAIL" starttime="20200820 22:24:49.973" endtime="20200820 22:24:59.427"></status>
-</kw>
-<kw name="CLOSE BROWSERS" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200820 22:24:59.427" endtime="20200820 22:25:02.079"></status>
+<msg timestamp="20200823 20:19:35.816" level="INFO">second</msg>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${TEST STATUS}</arg>
+<arg>three</arg>
 </arguments>
-<msg timestamp="20200820 22:25:02.080" level="INFO">FAIL</msg>
-<status status="PASS" starttime="20200820 22:25:02.080" endtime="20200820 22:25:02.080"></status>
+<msg timestamp="20200823 20:19:35.816" level="INFO">three</msg>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
+</kw>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
+</kw>
+<kw name="MULTIPLE VALUES">
+<arguments>
+<arg>four</arg>
+<arg>five</arg>
+<arg>Six</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>first</arg>
+</arguments>
+<msg timestamp="20200823 20:19:35.816" level="INFO">first</msg>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${TEST MESSAGE}</arg>
+<arg>second</arg>
 </arguments>
-<msg timestamp="20200820 22:25:02.080" level="INFO">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=83.0.4103.61)
-</msg>
-<status status="PASS" starttime="20200820 22:25:02.080" endtime="20200820 22:25:02.080"></status>
+<msg timestamp="20200823 20:19:35.816" level="INFO">second</msg>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
 </kw>
-<status status="PASS" starttime="20200820 22:24:59.427" endtime="20200820 22:25:02.080"></status>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>three</arg>
+</arguments>
+<msg timestamp="20200823 20:19:35.816" level="INFO">three</msg>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
 </kw>
-<doc>This is HDFC Bank home page</doc>
-<tags>
-<tag>Smoke</tag>
-</tags>
-<status status="FAIL" starttime="20200820 22:24:49.973" endtime="20200820 22:25:02.080" critical="yes">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=83.0.4103.61)
-</status>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
+</kw>
+<kw name="MULTIPLE VALUES">
+<arguments>
+<arg>seven</arg>
+<arg>eight</arg>
+<arg>nine</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>first</arg>
+</arguments>
+<msg timestamp="20200823 20:19:35.816" level="INFO">first</msg>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>second</arg>
+</arguments>
+<msg timestamp="20200823 20:19:35.816" level="INFO">second</msg>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.816"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>three</arg>
+</arguments>
+<msg timestamp="20200823 20:19:35.831" level="INFO">three</msg>
+<status status="PASS" starttime="20200823 20:19:35.831" endtime="20200823 20:19:35.831"></status>
+</kw>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.831"></status>
+</kw>
+<status status="PASS" starttime="20200823 20:19:35.816" endtime="20200823 20:19:35.831" critical="yes"></status>
 </test>
-<test id="s1-t3" name="TC_03_GOOGLE_HOME_PAGE">
-<kw name="MY TEST SETUP" type="setup">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${TEST_NAME}</arg>
-</arguments>
-<msg timestamp="20200820 22:25:02.080" level="INFO">TC_03_GOOGLE_HOME_PAGE</msg>
-<status status="PASS" starttime="20200820 22:25:02.080" endtime="20200820 22:25:02.080"></status>
-</kw>
-<status status="PASS" starttime="20200820 22:25:02.080" endtime="20200820 22:25:02.080"></status>
-</kw>
-<kw name="OPEN BROWSER AND NAVIGATE">
-<arguments>
-<arg>https://www.google.com</arg>
-<arg>chrome</arg>
-</arguments>
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-</arguments>
-<msg timestamp="20200820 22:25:02.080" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
-<status status="PASS" starttime="20200820 22:25:02.080" endtime="20200820 22:25:06.153"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200820 22:25:06.153" endtime="20200820 22:25:08.328"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>get title</arg>
-</arguments>
-<msg timestamp="20200820 22:25:08.328" level="INFO">get title</msg>
-<status status="PASS" starttime="20200820 22:25:08.328" endtime="20200820 22:25:08.328"></status>
-</kw>
-<kw name="Get WebElements" library="SeleniumLibrary">
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<arguments>
-<arg>xpath=//a</arg>
-</arguments>
-<assign>
-<var>@{links}</var>
-</assign>
-<msg timestamp="20200820 22:25:08.359" level="INFO">@{links} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="20c63582b5e84f6062debb2f6c3e25a1", element="8c750c03-c089-4e3e-990e-2641c2d19ffd")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
-<status status="PASS" starttime="20200820 22:25:08.328" endtime="20200820 22:25:08.359"></status>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<arguments>
-<arg>1</arg>
-</arguments>
-<assign>
-<var>${index}</var>
-</assign>
-<msg timestamp="20200820 22:25:08.359" level="INFO">${index} = 1</msg>
-<status status="PASS" starttime="20200820 22:25:08.359" endtime="20200820 22:25:08.359"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>@{links}[${index}]</arg>
-</arguments>
-<msg timestamp="20200820 22:25:08.359" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="20c63582b5e84f6062debb2f6c3e25a1", element="5a7a84d2-c73e-4a71-8802-5e47ab8e8241")&gt;'.</msg>
-<status status="PASS" starttime="20200820 22:25:08.359" endtime="20200820 22:25:09.072"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5s</arg>
-</arguments>
-<msg timestamp="20200820 22:25:14.074" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200820 22:25:09.072" endtime="20200820 22:25:14.075"></status>
-</kw>
-<status status="PASS" starttime="20200820 22:25:02.080" endtime="20200820 22:25:14.075"></status>
-</kw>
-<kw name="CLOSE BROWSERS" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200820 22:25:14.077" endtime="20200820 22:25:16.232"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${TEST STATUS}</arg>
-</arguments>
-<msg timestamp="20200820 22:25:16.232" level="INFO">PASS</msg>
-<status status="PASS" starttime="20200820 22:25:16.232" endtime="20200820 22:25:16.232"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${TEST MESSAGE}</arg>
-</arguments>
-<msg timestamp="20200820 22:25:16.232" level="INFO"></msg>
-<status status="PASS" starttime="20200820 22:25:16.232" endtime="20200820 22:25:16.232"></status>
-</kw>
-<status status="PASS" starttime="20200820 22:25:14.076" endtime="20200820 22:25:16.232"></status>
-</kw>
-<doc>This is HDFC Bank home page</doc>
-<tags>
-<tag>Smoke</tag>
-</tags>
-<status status="PASS" starttime="20200820 22:25:02.080" endtime="20200820 22:25:16.232" critical="yes"></status>
-</test>
-<kw name="MY SUITE TEARDOWN" type="teardown">
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>My Suite Teardown</arg>
-</arguments>
-<msg timestamp="20200820 22:25:16.232" level="INFO">My Suite Teardown</msg>
-<status status="PASS" starttime="20200820 22:25:16.232" endtime="20200820 22:25:16.232"></status>
-</kw>
-<status status="PASS" starttime="20200820 22:25:16.232" endtime="20200820 22:25:16.232"></status>
-</kw>
-<doc>This is first testcase</doc>
-<status status="FAIL" starttime="20200820 22:24:24.349" endtime="20200820 22:25:16.232"></status>
+<status status="PASS" starttime="20200823 20:19:35.800" endtime="20200823 20:19:35.831"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="2">Critical Tests</stat>
-<stat pass="1" fail="2">All Tests</stat>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1">Sanity</stat>
-<stat pass="1" fail="1">Smoke</stat>
 </tag>
 <suite>
-<stat pass="1" fail="2" id="s1" name="Test">Test</stat>
+<stat pass="2" fail="0" id="s1" name="DictionaryTest">DictionaryTest</stat>
 </suite>
 </statistics>
 <errors>
